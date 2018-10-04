@@ -62,14 +62,14 @@ autocmd bufnewfile *.c exe "1," . 6 . "g/File Name :.*/s//File Name : " .expand(
 autocmd bufnewfile *.c exe "1," . 6 . "g/File Type :.*/s//File Type : c_type"
 autocmd bufnewfile *.c exe "1," . 6 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd bufnewfile *.c exe "1," . 6 . "g/Author :.*/s//Author : Dorababu"
-autocmd Bufwritepre,filewritepre *.c execute "normal `a"
+autocmd Bufwritepre,filewritepre *.c execute "normal ma"
 
 autocmd bufnewfile *.v so D:\EDA_Installations\Vim\vimfiles\header_files\verilog.vim
 autocmd bufnewfile *.v exe "1," . 6 . "g/File Name :.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.v exe "1," . 6 . "g/File Type :.*/s//File Type : verilog"
 autocmd bufnewfile *.v exe "1," . 6 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd bufnewfile *.v exe "1," . 6 . "g/Author :.*/s//Author : Dorababu"
-autocmd bufwritepost,filewritepost *.v execute "normal `a"
+autocmd bufwritepost,filewritepost *.v execute "normal ma"
 
 
 autocmd bufnewfile *.sv so D:\EDA_Installations\Vim\vimfiles\header_files\system_verilog.vim
@@ -77,4 +77,4 @@ autocmd bufnewfile *.sv exe "1," . 6 . "g/File Name :.*/s//File Name : " .expand
 autocmd bufnewfile *.sv exe "1," . 6 . "g/File Type :.*/s//File Type : system_verilog"
 autocmd bufnewfile *.sv exe "1," . 6 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd bufnewfile *.sv exe "1," . 7 . "g/Author :.*/s//Author : Dorababu"
-autocmd bufwritepost,filewritepost *.sv execute "normal `a"
+autocmd bufwritepost,filewritepost *.sv execute "normal ma"
